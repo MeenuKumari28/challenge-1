@@ -53,6 +53,7 @@ padding-vertical.px: 16
 padding-horizontal.px: 24
 background.solid: $inherited.colors.cta-primary.base
 background.solid if { button-el.cta-hover }: $inherited.colors.cta-primary.hover
+shadow if { button-el.cta-hover }: $shadow
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-el.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-el.cta-hover, v = false)
@@ -88,6 +89,7 @@ padding-vertical.px: 10
 padding-horizontal.px: 18
 background.solid: $inherited.colors.cta-primary.base
 background.solid if { button-large.cta-hover }: $inherited.colors.cta-primary.hover
+shadow if { button-large.cta-hover }: $shadow
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-large.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-large.cta-hover, v = false)
@@ -123,6 +125,7 @@ padding-vertical.px: 6
 padding-horizontal.px: 16
 background.solid: $inherited.colors.cta-primary.base
 background.solid if { button-medium.cta-hover }: $inherited.colors.cta-primary.hover
+shadow if { button-medium.cta-hover }: $shadow
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-medium.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-medium.cta-hover, v = false)
@@ -158,6 +161,7 @@ padding-vertical.px: 4
 padding-horizontal.px: 12
 background.solid: $inherited.colors.cta-primary.base
 background.solid if { button-small.cta-hover }: $inherited.colors.cta-primary.hover
+shadow if { button-small.cta-hover }: $shadow
 align-content: center
 $on-mouse-enter$: $ftd.set-bool($a = $button-small.cta-hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button-small.cta-hover, v = false)
@@ -173,3 +177,15 @@ role: $inherited.types.button-small
 -- end: ftd.row
 
 -- end: button-small
+
+
+
+
+
+-- ftd.shadow shadow:
+color: #B2B2B2
+x-offset.px: 0
+y-offset.px: 4
+blur.px: 6
+inset-body: false
+spread.px: 0
